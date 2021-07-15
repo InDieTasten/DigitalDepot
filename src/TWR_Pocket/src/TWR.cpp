@@ -26,6 +26,11 @@ void TWR_Display::NewBus(){
     M5.EPD.SetRotation(CanvasRotation);
     canvas.createCanvas(CanvasWidth, CanvasHeight);
     canvas.drawPngFile(SD, "/Images/BG.png");
+    canvas.setTextSize(4);
+    canvas.drawString("Bus: " + String(CurrentData.id), 0, 300);
+
+
+
     canvas.pushCanvas(0, 0, ImageUpdatemode);
     delay(450);
 

@@ -1,6 +1,6 @@
 #include "TWR.h"
 
-TWR_Display test;
+TWR_Display display;
 
 
 void setup() {
@@ -14,8 +14,10 @@ void setup() {
   Serial.print("AP IP adress: ");
   Serial.println(IP);
 
+  M5.EPD.Clear();
 
-  test.NewBus();
+
+  display.NewBus();
 
 }
 
