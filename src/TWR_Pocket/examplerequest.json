@@ -1,1 +1,8 @@
-{"id":0,"isMaxi":false,"isElectric":true,"length":18,"needsWashing":true,"needsRepair":false}
+{
+    "id": 0,
+    "isMaxi": false,
+    "isElectric": true,
+    "length": 18,
+    "needsWashing": true,
+    "needsRepair": false
+}
