@@ -2,10 +2,10 @@
 
 TWR_Display display;
 
+void setup()
+{
 
-void setup() {
-
-  M5.begin(true,true,true,false,false);
+  M5.begin(true, true, true, false, false);
 
   Serial.println("Starting AP...");
   WiFi.softAP(SSID, Pass);
@@ -16,16 +16,26 @@ void setup() {
 
   M5.TP.SetRotation(CanvasRotation);
 
-
   M5.EPD.Clear(true);
 
-
   display.NewBus();
-
 }
 
-void loop() {
+uint16_t _last_pos_x;
+uint16_t _last_pos_y;
+
+void loop()
+{
   M5.TP.update();
-  Serial.println("X: " + String(M5.TP.readFinger(M5.TP.getFingerNum()).x) + " Y: " + String(M5.TP.readFinger(M5.TP.getFingerNum()).y));
+
+  bool is_finger_up = M5.TP.isFingerUp();
+  if (is_finger_up || (_last_pos_x != M5.TP.readFingerX(0)) || (_last_pos_y != M5.TP.readFingerY(0)))
+  {
+    _last_pos_x = M5.TP.readFingerX(0);
+    _last_pos_y = M5.TP.readFingerY(0);
+  }
+  if(!is_finger_up){
+  Serial.println("X: " + String(M5.TP.readFinger(0).x) + " Y: " + String(M5.TP.readFinger(0).y));
+  }
   delay(50);
 }
