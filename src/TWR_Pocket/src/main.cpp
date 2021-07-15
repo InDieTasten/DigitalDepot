@@ -14,7 +14,10 @@ void setup() {
   Serial.print("AP IP adress: ");
   Serial.println(IP);
 
-  M5.EPD.Clear();
+  M5.TP.SetRotation(CanvasRotation);
+
+
+  M5.EPD.Clear(true);
 
 
   display.NewBus();
@@ -22,5 +25,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  M5.TP.update();
+  Serial.println("X: " + String(M5.TP.readFinger(M5.TP.getFingerNum()).x) + " Y: " + String(M5.TP.readFinger(M5.TP.getFingerNum()).y));
+  delay(50);
 }

@@ -11,7 +11,6 @@
 
 #define ServerIP "10.25.10.2"
 
-#define ExampleResposne '{"id":0,"isMaxi":false,"isElectric":true,"length":18,"needsWashing":true,"needsRepair":false}'
 
 
 //===============================================================================================
@@ -30,8 +29,6 @@ const m5epd_update_mode_t ImageUpdatemode = UPDATE_MODE_GC16;
 
 class TWR_Display{
 public:
-    TWR_Display();
-    ~TWR_Display();
 
     void NewBus();
     void Update();
