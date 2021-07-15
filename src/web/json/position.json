@@ -1,0 +1,678 @@
+[
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 4,
+    "buses": [
+      {
+        "bus": {
+          "id": 9,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 18,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 44,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 58,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 5,
+    "buses": [
+      {
+        "bus": {
+          "id": 8,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 34,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 35,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 50,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 53,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 6,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 20,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 30,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 31,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 37,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 38,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": true
+        }
+      },
+      {
+        "bus": {
+          "id": 63,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": false,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 1,
+    "buses": [
+      {
+        "bus": {
+          "id": 36,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": false,
+    "isMaxi": true,
+    "maxCapacity": 7,
+    "currentCapacity": 1,
+    "buses": [
+      {
+        "bus": {
+          "id": 57,
+          "isMaxi": true,
+          "isElectric": false,
+          "length": 24,
+          "needsWashing": false,
+          "needsRepair": true
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": false,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 2,
+    "buses": [
+      {
+        "bus": {
+          "id": 4,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 56,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 2,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 10,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 17,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 19,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 26,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 29,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": true
+        }
+      },
+      {
+        "bus": {
+          "id": 42,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 14,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 23,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 25,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": true,
+          "needsRepair": true
+        }
+      },
+      {
+        "bus": {
+          "id": 27,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 41,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 49,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 54,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 7,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 13,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 15,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 22,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": true
+        }
+      },
+      {
+        "bus": {
+          "id": 28,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 32,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 33,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 3,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 5,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 12,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 45,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 46,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 48,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 51,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 3,
+    "buses": [
+      {
+        "bus": {
+          "id": 21,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 40,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 43,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  },
+  {
+    "isElectric": true,
+    "isMaxi": false,
+    "maxCapacity": 7,
+    "currentCapacity": 7,
+    "buses": [
+      {
+        "bus": {
+          "id": 0,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 1,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 11,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 16,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 18,
+          "needsWashing": true,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 24,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 47,
+          "isMaxi": false,
+          "isElectric": false,
+          "length": 18,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      },
+      {
+        "bus": {
+          "id": 52,
+          "isMaxi": false,
+          "isElectric": true,
+          "length": 12,
+          "needsWashing": false,
+          "needsRepair": false
+        }
+      }
+    ]
+  }
+]
