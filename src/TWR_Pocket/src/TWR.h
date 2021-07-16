@@ -30,7 +30,7 @@ const m5epd_update_mode_t ImageUpdatemode = UPDATE_MODE_GC16;
 class TWR_Display{
 public:
 
-    void NewBus();
+    void NewBus(int run);
     void Update();
 
 private:

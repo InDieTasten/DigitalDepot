@@ -18,11 +18,13 @@ void setup()
 
   M5.EPD.Clear(true);
 
-  display.NewBus();
+  display.NewBus(0);
 }
 
 uint16_t _last_pos_x;
 uint16_t _last_pos_y;
+
+int count = 1;
 
 void loop()
 {
@@ -35,7 +37,13 @@ void loop()
     _last_pos_y = M5.TP.readFingerY(0);
   }
   if(!is_finger_up){
-  Serial.println("X: " + String(M5.TP.readFinger(0).x) + " Y: " + String(M5.TP.readFinger(0).y));
+  // Serial.println("X: " + String(M5.TP.readFinger(0).x) + " Y: " + String(M5.TP.readFinger(0).y));
+
+  display.NewBus(count);
+  count++;
+  delay(1000);
+
   }
+  M5.TP.flush();
   delay(50);
 }
