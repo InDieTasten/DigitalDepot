@@ -9,7 +9,7 @@
 #define SSID "TWR_Network"
 #define Pass "123456789"
 
-#define ServerIP "10.25.10.2"
+#define ServerIP "192.168.4.2"
 
 
 
@@ -24,19 +24,31 @@ const int CanvasHeight = 960;
 const m5epd_update_mode_t ImageUpdatemode = UPDATE_MODE_GC16;
 
 //===============================================================================================
-//Settings
+
+
 
 
 class TWR_Display{
 public:
 
     void NewBus(int run);
-    void Update();
+    void loop();
 
 private:
-    void WasNextPressed();
+    //Function returns 0 if nothing was pressed
+    //Returns 1 If Erfühlt was pressed
+    //Returns 2 If Störug was pressed
+    uint8_t WasButtonPressed();
+
+
+    //last pos of the finger to make sure the click isn't registered more than once
+    uint16_t _last_pos_x;
+    uint16_t _last_pos_y;
 
 };
+
+extern TWR_Display display;
+
 
 struct RecivedData {
 
