@@ -1,5 +1,3 @@
-const { selectColor } = require("debug");
-
 let updateIntervalId;
 
 class Lane {
