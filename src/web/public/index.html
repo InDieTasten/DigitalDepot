@@ -1,19 +1,21 @@
 <html>
 <head>
     <style>
+
         .hall {
             background-color: gray;
             padding: 15px;
             background-image: linear-gradient(rgb(180, 180, 180), rgb(119, 119, 119));
             width: auto;
             border-radius: 10px;
-            display: inline-block;
+            display: inline-flex;
+            flex-flow: row;
+            margin: 0 auto;
         }
         .lane {
             width: auto;
             height: auto;
             border-radius: 10px;
-            display: inline-block;
             border: white dotted 2px;
         }
         .position {
@@ -22,6 +24,10 @@
             background-color: white;
             border-radius: 5px;
             margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color .3s ease;
         }
         .position.available {
             background-color: lightgreen;
@@ -51,7 +57,6 @@
     </style>
 </head>
 <body style="position: relative;">
-
     <div class="hall">
         <div class="lane">
             <div class="position"></div>

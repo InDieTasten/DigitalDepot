@@ -1,1 +1,14 @@
-[{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":false,"isMaxi":false,"maxCapacity":7},{"isElectric":false,"isMaxi":true,"maxCapacity":7},{"isElectric":false,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7},{"isElectric":true,"isMaxi":false,"maxCapacity":7}]
+[
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":false,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":false,"isMaxi":true,"maxCapacity":7},
+    {"isElectric":false,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7},
+    {"isElectric":true,"isMaxi":false,"maxCapacity":7}
+]
