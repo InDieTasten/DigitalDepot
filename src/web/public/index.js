@@ -1,5 +1,16 @@
 let updateIntervalId;
 
+class Bus {
+    constructor(bus) {
+        this.id = bus?.id;
+        this.isMaxi = bus?.isMaxi;
+        this.isElectric = bus?.isElectric;
+        this.length = bus?.length;
+        this.fuel = Math.floor(Math.random() * 100);
+    }
+}
+
+
 class Lane {
     constructor(lane)
     {
@@ -69,7 +80,7 @@ function initialize() {
     Promise.all([
         fetch("http://localhost:8080/buses/all")
             .then(response => response.json())
-            .then(data => data.forEach(item => window.buses.push(item))),
+            .then(data => data.forEach(item => window.buses.push(new Bus(item)))),
         fetch("http://localhost:8080/lanes/all")
             .then(response => response.json())
             .then(data => data.forEach(item => window.lanes.push(new Lane(item))))])
@@ -103,7 +114,7 @@ function addBusToPosition(position, bus)
         position.classList.add("isElectric");
     }
     position.title = (bus.isElectric ? " Elektro-" : "") + "Bus: " + bus.id + " Lange: " + bus.length;
-    position.innerHTML = "<span>" + bus.id + "</span>";
+    position.innerHTML = "<div class=\"busfuel\" style=\"height:" + (100 - bus.fuel) + "px;\"></div><span>" + bus.id + "</span>";
     position.bus = bus;
     bus.position = position;
 }
@@ -121,7 +132,7 @@ function updateDom() {
 }
 
 function dequeueRandomBuses() {
-    let availableBuses = window.buses.filter(bus => bus.position);
+    let availableBuses = window.buses.filter(bus => bus.position && bus.fuel > 90);
     let numberToDequeue = Math.min(Math.floor(Math.random()*availableBuses.length), 20);
     for(let i = 0; i < numberToDequeue; ++i) {
         dequeueRandomBus();
@@ -129,10 +140,17 @@ function dequeueRandomBuses() {
 }
 
 function dequeueRandomBus() {
-    let availableLanes = window.lanes.filter(lane => lane.buses[0]);
+    let availableLanes = window.lanes.filter(lane => lane.buses[0] && (lane.buses[0].fuel > 90 || !lane.buses[0].isElectric));
     let lane = availableLanes[Math.floor(Math.random()*availableLanes.length)];
-    let bus = lane.dequeue();
-    bus.position = undefined;
+    if (lane) {
+        let bus = lane.dequeue();
+        bus.position = undefined;
+    }
+}
+
+function fuelBuses() {
+    let availableBuses = window.buses.filter(bus => bus.position && bus.isElectric);
+    availableBuses.forEach(bus => bus.fuel = Math.min(100, bus.fuel + 10));
 }
 
 function enqueueRandomBuses() {
@@ -154,6 +172,12 @@ function enqueueRandomBus() {
     let lane = availableLanes[Math.floor(Math.random()*availableLanes.length)];
     if (lane && lane.hasCapacity) {
         try {
+            if (bus.isElectric) {
+                bus.fuel = Math.floor((Math.random() * 45) + 5);
+            } else {
+                bus.fuel = Math.floor((Math.random() * 95) + 5)
+            }
+
             lane.enqueue(bus);
         } catch {}
     }
@@ -162,9 +186,10 @@ function enqueueRandomBus() {
 function startLoop() {
     initialize();
     updateIntervalId = setInterval(() => {
-        updateDom();
         dequeueRandomBuses();
+        fuelBuses();
         enqueueRandomBuses();
+        updateDom();
     }, 1000);
 }
 

@@ -28,15 +28,17 @@
             justify-content: center;
             align-items: center;
             transition: background-color .3s ease;
+            position: relative;
+            overflow: hidden;
         }
         .position.available {
-            background-color: lightgreen;
+            background-color: darkgray;
         }
         .position.hasBus {
-            background-color: yellow;
+            background-color: #ff0;
         }
         .position.hasBus.isElectric {
-            background-color: lightblue;
+            background-color: #0f0;
         }
         .evac-zone {
             background-color: red;
@@ -44,15 +46,11 @@
             margin-left: -5px;
             margin-right: -5px;
         }
-        .bus {
+        .busfuel {
             position: absolute;
-            width: 100px;
-            height: 600px;
-            background-color: red;
-            border-radius: 15px;
-            color: white;
-            padding: 10px;
-            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            align-self: start;
+            width: 100%;
         }
     </style>
 </head>
